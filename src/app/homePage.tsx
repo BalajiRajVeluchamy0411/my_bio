@@ -1,5 +1,4 @@
 import React from 'react'
-import About from './components/about';
 import Cards from './components/cards';
 import Contact from './components/contact';
 import Profile from './components/profile';
