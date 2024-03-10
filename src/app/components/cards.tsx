@@ -30,7 +30,7 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ imageClass, header, description, skills, affiliation, duration }) => {
     return (
-        <div className={`relative overflow-hidden rounded-3xl w-[90%] h-auto parallax ${imageClass} mx-auto`}>
+        <div className={`relative overflow-hidden rounded-3xl w-[90%] h-auto parallax ${imageClass} mx-auto shadow-xl shadow-slate-800`}>
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
             />

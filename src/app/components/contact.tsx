@@ -12,7 +12,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='w-[45%] h-[70%] bg-white mx-auto flex flex-col items-center justify-center rounded-xl'>
+        <div className='w-[45%] h-[70%] bg-white mx-auto flex flex-col items-center justify-center rounded-xl shadow-2xl shadow-white'>
             <div className='w-[80%] mx-auto '>
                 <h1 className='font-bold text-center text-6xl'>{contactDetails.header}</h1>
                 <div>
@@ -20,7 +20,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col items-center space-y-4'>
                     {Object.entries(contactDetails.Methods).map(([method, link], index) => (
-                        <Link key={index} href={link}>
+                        <Link key={index} href="mailto:bvelucha@asu.edu">
                             <div className='bg-black text-white p-3 rounded-lg text-center duration-300 hover:-translate-y-1.5 hover:duration-300 hover:scale-125  hover:bg-opacity-80 flex items-center space-x-1 w-48 h-12'>
                                 <span className='w-full text-center text-lg'>{method}</span>
                             </div>
