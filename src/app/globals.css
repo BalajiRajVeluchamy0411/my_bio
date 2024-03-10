@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.parallax {
+    min-height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-image: url("../../public/assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 100vh; 
+    overflow-y: scroll;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.test1 {
+    background-image: url("../../public/assets/rest.jpg");
+    background-color: rgba(14, 9, 9, 0.8);
+}
+
+.test2 {
+    background-image: url("../../public/assets/growth.jpg");
+    background-color: rgba(14, 9, 9, 0.8);
+}
+.test3 {
+    background-image: url("../../public/assets/dashboard.jpg");
+    background-color: rgba(14, 9, 9, 0.8);
+}
+.test4 {
+    background-image: url("../../public/assets/workspace.png");
+    background-color: rgba(14, 9, 9, 0.8);
+}
+.test5 {
+    background-image: url("../../public/assets/analysis.png");
+    background-color: rgba(14, 9, 9, 0.8);
+}
+.test1::before,
+.test2::before,.test3::before,.test4::before,.test5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); /* Adjust opacity as needed */
 }
