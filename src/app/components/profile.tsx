@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Photo from "../../../public/assets/userPhoto.webp"
+import Photo from "../../../public/assets/userPhoto.jpg"
 import SocialMedia from './socialMedia'
 import Link from 'next/link'
 const Profile = () => {
